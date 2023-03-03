@@ -1,0 +1,20 @@
+$orange: #ff891e;
+$black: #000000;
+$white: #ffffff;
+
+html,
+body {
+  height: 100%;
+  font-family: 'OpenSans';
+  color: $black;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  background-color: #c4cdd6;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  position: relative;
+}
