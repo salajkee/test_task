@@ -11,10 +11,10 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   const dataImg = [
-    '../images/preview/slider_1pre.webp',
-    '../images/preview/slider_2pre.webp',
-    '../images/preview/slider_3pre.webp',
-    '../images/preview/slider_4pre.webp',
+    'images/preview/slider_1pre.webp',
+    'images/preview/slider_2pre.webp',
+    'images/preview/slider_3pre.webp',
+    'images/preview/slider_4pre.webp',
   ];
 
   const dataText = [
@@ -42,8 +42,12 @@ window.addEventListener('DOMContentLoaded', () => {
       clickable: true,
       renderBullet: function (index, className) {
         return `<div class="${className}">
-        <img class="custom__bullet-img" src="${dataImg[index]}"  alt="1-slide" />
-        <p class="custom__bullet-title">${dataText[index].text} <br> <span>${dataText[index].title}</span></p>
+        <img class="custom__bullet-img" src="${dataImg[index]}"  alt="${
+          index + 1
+        }-slide" />
+        <p class="custom__bullet-title">${dataText[index].text} <br> <span>${
+          dataText[index].title
+        }</span></p>
       </div>`;
       },
     },
